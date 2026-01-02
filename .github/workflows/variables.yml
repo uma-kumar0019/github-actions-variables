@@ -4,7 +4,7 @@ on:
   push
 
 env:
-  ACCESS_ID: ${{ secrets.ACCESS_ID }}
+  ACCESS_ID: ${{ vars.ACCESS_ID }}
 
 jobs:
   build:
@@ -14,5 +14,6 @@ jobs:
     - name: Echo ACCESS_ID
 
       run: echo $ACCESS_ID
+
 
 
